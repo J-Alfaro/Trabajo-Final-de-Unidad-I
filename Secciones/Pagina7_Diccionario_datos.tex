@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+\section{DESCRIPCIÓN DICCIONARIO DE DATOS}
+
+\subsection{Tabla Nro. 1: Diccionario de Datos Libro:}
+
+\begin{tabular}{|p{25mm}|l|p{20mm}|p{50mm}|}\hline
+ 
+VARIABLE  & TIPO DE DATOS  & CARACTER & DESCRIPCIÓN VARIABLE\\\hline
+AutorLibro & String & 50 & Es propio el nombre del autor del libro\\\hline
+EstadoDisponible & bool & 25 & Estado disponible de cada libro en la biblioteca.\\\hline
+IdLibro & Int & 10 & Código de cada libro agregado en la tabla Libro.\\\hline
+TituloLibro & String & 10 & Título del Libro propio.\\\hline
+\end{tabular}
+\\
+\\
+\subsection{Tabla Nro. 2: Diccionario de Datos Reserva:}
+
+\begin{tabular}{|p{25mm}|l|p{20mm}|p{50mm}|}\hline
+ 
+VARIABLE  & TIPO DE DATOS  & CARACTER & DESCRIPCIÓN VARIABLE\\\hline
+EstadoReserva & String & 10 & Estado de la Reserva.\\\hline
+FechaReserva & DateTime & 50 & Fecha en la cual esta ocupada la reserva del libro (Recojo).\\\hline
+IdLibro & Int & 10 & Código de cada libro agregado en la tabla Libro.\\\hline
+IdReserva & int & 10 & Código de Usuario de la tabla Usuario\\\hline
+\end{tabular}
+\\
+\\
+\subsection{Tabla Nro. 3: Diccionario de Datos Préstamo:}
+
+\begin{tabular}{|p{25mm}|l|p{20mm}|p{50mm}|}\hline
+ 
+VARIABLE  & TIPO DE DATOS  & CARACTER & DESCRIPCIÓN VARIABLE\\\hline
+IdPrestamo & Int & 11 & ID de cada libro es propio.\\\hline
+EstadoPrestamo & String & 10 & Estado de la reserva.\\\hline
+FechaReserva & DateTime  & 10 & Contraseña con la cual el usuario se autentica en el sistema\\\hline
+IdLibro & Int & 10 & Código de cada libro agregado en la tabla Libro.\\\hline
+IdReserva & int & 10 & Código de cada Reserva de la tabla Reserva.\\\hline
+IdUsuario & Int & 10 & código de Usuario de la tabla Usuario\\\hline
+\end{tabular}
+\\
+\\
+\subsection{Tabla Nro. 4: Diccionario de Datos Usuario:}
+
+\begin{tabular}{|p{25mm}|l|p{20mm}|p{50mm}|}\hline
+ 
+VARIABLE  & TIPO DE DATOS  & CARACTER & DESCRIPCIÓN VARIABLE\\\hline
+CodigoUsuario & String & 8 & Código del Usuario asignado y propio. \\\hline
+IdUsuario & Int & 10 & código de Usuario de la tabla Usuario\\\hline
+NombreUsuario & String & 50 & Nombre de cada Usuario agregado en la tabla Usuario.\\\hline
+\end{tabular}
+
+
+
+\end{document}
